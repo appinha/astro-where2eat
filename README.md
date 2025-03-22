@@ -1,36 +1,37 @@
-# Astro Starter Kit: Basics
+<h1 align="center">
+	📍 where2eat 🍽️
+</h1>
 
-```sh
-npm create astro@latest -- --template basics
-```
+<p align="center">
+	<i>A minimal SSR webapp for randomly selecting a place to eat, built with <a href="https://astro.build/">Astro</a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" aria-hidden="true" stroke="currentcolor" fill="currentcolor" style="--size:1.2em" class="astro-patnjmll" data-astro-cid-patnjmll=""> <g data-astro-cid-patnjmll=""><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M94.1 184.6c-11.4 33.9-56.6 33.9-56.6 33.9s0-45.2 33.9-56.6m124.5-56.5L128 173.3 82.7 128l67.9-67.9C176.3 34.4 202 34.7 213 36.3a7.8 7.8 0 0 1 6.7 6.7c1.6 11 1.9 36.7-23.8 62.4Z"></path><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M184.6 116.7v64.6a8 8 0 0 1-2.4 5.6l-32.3 32.4a8 8 0 0 1-13.5-4.1l-8.4-41.9m11.3-101.9H74.7a8 8 0 0 0-5.6 2.4l-32.4 32.3a8 8 0 0 0 4.1 13.5l41.9 8.4"></path></g></svg>.</i>
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+<p align="center">
+	<img alt="Repo's language count" src="https://img.shields.io/github/languages/count/appinha/astro-where2eat?color=slateblue" />
+	<img alt="Repo's top language" src="https://img.shields.io/github/languages/top/appinha/astro-where2eat?color=mediumpurple" />
+	<img alt="Repo's code size in bytes" src="https://img.shields.io/github/languages/code-size/appinha/astro-where2eat?color=orchid" />
+	<img alt="Repo's creation date" src="https://img.shields.io/github/created-at/appinha/astro-where2eat?color=teal" />
+	<img alt="Repo's last commit" src="https://img.shields.io/github/last-commit/appinha/astro-where2eat?color=darkturquoise" />
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-usage">Usage</a>
+	<span> · </span>
+	<a href="-changelog">Changelog</a>
+</h3>
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🗣️ About
 
-## 🚀 Project Structure
+Tech Stack:
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Front-end:** Astro, Tailwindcss.
+- **Back-end:** TBD.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🛠️ Usage
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
+### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -43,6 +44,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 📄 Changelog
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Astro app created with:
+
+```sh
+npm create astro@latest -- --template basics
+```
