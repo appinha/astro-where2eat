@@ -5,14 +5,66 @@ import logo from "../assets/logo.svg";
 
 <Layout>
   <main class="h-full flex justify-center p-12">
-    <section class="flex flex-col justify-center gap-8">
-      <img src={logo.src} alt="Where to eat logo" class="max-h-[360px]" />
+    <section class="flex flex-col justify-center items-center gap-8 bounce-in">
+      <img src={logo.src} alt="Where to eat logo" class="max-h-[360px] pin-bounce" />
       <a
-        href="/result"
-        class="py-3 px-6 rounded-full bg-[#f385d4] hover:bg-[#ed45bd] text-white text-center text-2xl font-bold cursor-pointer transition-colors duration-400"
+        href="javascript:setTimeout(() => { window.location = '/result' }, 300);"
+        class="w-fit py-4 px-14 rounded-full bg-[#f385d4] hover:bg-[#F06ACA] active:bg-[#EB33B7] text-white text-xl font-bold cursor-pointer transition-colors duration-400 button-animation"
       >
         Where to eat?
       </a>
     </section>
   </main>
 </Layout>
+
+<style>
+  .bounce-in {
+    animation: bounce-in 1s ease-in;
+  }
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pin-bounce {
+    animation: pin-bounce 2.5s ease infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes pin-bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-40px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .button-animation:hover {
+    transform: scale3d(1.2, 1.2, 1);
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+  }
+
+  .button-animation:active {
+    transform: scale3d(0.95, 0.95, 1);
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+  }
+</style>
